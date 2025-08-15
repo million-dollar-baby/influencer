@@ -148,21 +148,21 @@
     <!-- Left Contact Info -->
     <div class="col-md-4 contact-info">
       <h3>Let's get in touch</h3>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-        when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p><br>
+      <p>We’d love to hear from you! Whether you have a question, feedback, or just want to say hello, our team is always here to help.</p><br>
 
       <div class="info-item">
         <i class="fa-solid fa-location-dot"></i>
-        <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+        <p>1107 G wing, Lodha Unica, Jogeshwari W, Mumbai - 400101</p>
       </div>
       <div class="info-item">
         <i class="fa-solid fa-phone"></i>
-        <p>+1 235 2355 98</p>
+        <p>+91 8000129803, +91 9930739442
+</p>
       </div>
       <div class="info-item">
         <i class="fa-solid fa-envelope"></i>
-        <a href="mailto:info@yoursite.com">info@yoursite.com</a>
+        <a href="mailto:aceagency45@gmail.com">aceagency45@gmail.com
+</a>
       </div>
       <div class="info-item">
         <i class="fa-solid fa-globe"></i>
@@ -173,23 +173,24 @@
     <!-- Right Contact Form -->
     <div class="col-md-8 contact-form">
       <h4>Get in touch</h4>
-      <form>
-        <div class="row mb-3">
-          <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Full Name">
-          </div>
-          <div class="col-md-6">
-            <input type="email" class="form-control" placeholder="Email Address">
-          </div>
-        </div>
-        <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Subject">
-        </div>
-        <div class="mb-3">
-          <textarea class="form-control" rows="5" placeholder="Message"></textarea>
-        </div>
-        <button type="submit" class="btn btn-dark px-4 py-2">Send Message</button>
-      </form>
+<form action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST">
+  <input type="hidden" name="_captcha" value="false">
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+    </div>
+    <div class="col-md-6">
+      <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+    </div>
+  </div>
+  <div class="mb-3">
+    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+  </div>
+  <div class="mb-3">
+    <textarea name="message" class="form-control" rows="5" placeholder="Message" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-dark px-4 py-2">Send Message</button>
+</form>
     </div>
   </div>
 </div><br><br>
@@ -245,6 +246,26 @@
       }
     });
   </script>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+      emailjs.init("YOUR_PUBLIC_KEY"); // from EmailJS dashboard
+  })();
+
+  function sendMail(e) {
+    e.preventDefault();
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target)
+      .then(() => alert("Message sent!"))
+      .catch(err => alert("Error: " + err));
+  }
+</script>
+
+<form onsubmit="sendMail(event)">
+  <!-- Your form fields -->
+</form>
+
 
 </body>
 </html>

@@ -247,24 +247,10 @@
 
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script>
-  (function(){
-      emailjs.init("YOUR_PUBLIC_KEY"); // from EmailJS dashboard
-  })();
 
-  function sendMail(e) {
-    e.preventDefault();
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target)
-      .then(() => alert("Message sent!"))
-      .catch(err => alert("Error: " + err));
-  }
-</script>
-
-<form onsubmit="sendMail(event)">
-  <!-- Your form fields -->
-</form>
 
 
 </body>
 </html>
+
 

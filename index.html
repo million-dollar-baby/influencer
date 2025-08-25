@@ -208,6 +208,7 @@
       font-size: 3rem;
     }
     .info-icon {
+      font-size: 2rem;
       width: 24px;
       height: 24px;
       border: 2px solid white;
@@ -248,7 +249,7 @@
     }
 
     .logo-slide {
-      width: 250px;
+      width: 200px;
       flex-shrink: 0;
       padding: 10px;
       display: flex;
@@ -260,14 +261,10 @@
       max-width: 100%;
       max-height: 80px;
       object-fit: contain;
-      filter: grayscale(100%);
-      transition: filter 0.3s;
+     
     }
 
-    .logo-slide img:hover {
-      filter: grayscale(0%);
-    }
-
+  
     @keyframes scroll {
       0% {
         transform: translateX(0);
@@ -642,7 +639,7 @@
         <!-- Service 5 -->
         <div class="col-md-6 col-lg-3">
           <div class="service-card h-100">
-            <div class="service-icon">🎯</div>
+            <div class="service-icon">💻</div>
             <h5 class="service-title">Digital Marketing</h5>
           </div>
         </div>
@@ -709,7 +706,7 @@
         </div>
         <div class="info-block mb-4">
           <div class="d-flex align-items-start">
-            <span class="info-icon">👥</span>
+            <span class="info-icon" >👥</span>
             <div>
               <h5>Authentic Engagement</h5>
               <p>Build trust through genuine interactions as influencers create relatable content that nurtures strong relationships with engaged audiences.</p>
@@ -815,7 +812,7 @@
 
   <!-- Client Logo Scroll Section -->
   <section class="logo-slider">
-    <div class="container-fluid">
+    <br><br><div class="container-fluid">
       <center><h1>Brands we closely work with</h1></center><br>
       <div class="logo-track">
         <!-- Logos (duplicate for seamless scroll) -->
@@ -832,7 +829,7 @@
         <div class="logo-slide"><img src="/assets/img/samsung.jpg" alt="Client 4"></div>
         <div class="logo-slide"><img src="/assets/img/ubon.jpg" alt="Client 5"></div>
       </div>
-    </div>
+    </div><br><br>
   </section>
 
 <!-- Testimonial -->
@@ -853,12 +850,7 @@
                         Try a session for free and see if<br>
                         it's right for you.
                     </h2>
-                    <p class="offer-subheading">
-                        There's no commitment, pressure, or obligation.
-                    </p>
-                    <button class="btn btn-light">
-                        Contact Us
-                    </button>
+                  
                 </div>
             </div>
         </div>
@@ -1016,6 +1008,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 </body>
 </html>
+
 
 
 

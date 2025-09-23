@@ -100,9 +100,14 @@ h5 {
 }
 
 .navbar-transparent {
-  background: transparent;
+  background: transparent;   /* no background */
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  position: absolute;        /* makes it overlay hero video */
+  width: 100%;               /* full width */
+  top: 0;
+  left: 0;
+  z-index: 10;               /* keeps it above video */
 }
 
 .navbar-fixed {

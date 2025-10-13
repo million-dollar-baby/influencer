@@ -183,7 +183,7 @@ h5 {
 @media (max-width: 768px) {
   .banner {
     min-height: 90vh; /* keep it full height */
-    padding: 80px 20px; /* small side padding */
+    padding: 100px 0 10px; /* small side padding */
   }
 }
 

@@ -100,9 +100,9 @@ h5 {
 /* Banner section Start */
 .banner-section {
   background-color: #110230;  /* Full-width background color */
-  min-height: 100vh;          /* Full viewport height */
+  min-height: 80vh;          /* Full viewport height */
   display: flex;
-  justify-content: center;     /* Center horizontally */
+  justify-content: left;     /* Center horizontally */
   align-items: center;         /* Center vertically */
   padding: 50px 0;            /* Optional vertical padding */
 }

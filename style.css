@@ -92,7 +92,8 @@ h5 {
 /* Fullscreen on mobile devices */
 @media (max-width: 768px) {
   .video-section {
-    height: 100vh; /* Full screen height */
+    padding; 100px 0px 0px;
+    height: 50vh; /* Full screen height */
   }
 }
 

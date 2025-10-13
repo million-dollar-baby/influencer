@@ -182,8 +182,8 @@ h5 {
 /* Optional: Apply only on mobile */
 @media (max-width: 768px) {
   .banner {
-    min-height: 80vh; /* keep it full height */
-    padding: 0 20px; /* small side padding */
+    min-height: 90vh; /* keep it full height */
+    padding: 80px 20px; /* small side padding */
   }
 }
 

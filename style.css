@@ -92,20 +92,35 @@ h5 {
 /* Fullscreen on mobile devices */
 @media (max-width: 768px) {
   .video-section {
-    padding; 100px 0px 0px;
+    padding; 150px 0px 0px;
     height: 50vh; /* Full screen height */
   }
 }
 
-    /* Optional: dark overlay if you want to add text later */
-    .video-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.3);
-    }
+/* Banner section Start */
+.banner-section {
+  background-color: #110230;  /* Full-width background color */
+  min-height: 100vh;          /* Full viewport height */
+  display: flex;
+  justify-content: center;     /* Center horizontally */
+  align-items: center;         /* Center vertically */
+  padding: 50px 0;            /* Optional vertical padding */
+}
+
+.banner-text h1, 
+.banner-text h5 {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .banner-text h1 {
+    font-size: 2rem;          /* Adjust heading size for mobile */
+  }
+  .banner-text h5 {
+    font-size: 1rem;          /* Adjust subheading size for mobile */
+  }
+}
+
 
 /* Service section Start */
 
